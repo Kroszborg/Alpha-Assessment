@@ -3,14 +3,6 @@ import CarCarousel from '../components/car-carousel'
 import { CarDetails } from "@/components/car-details"
 import { EMICalculator } from "@/components/emi-calculator"
 import { SiteHeader } from "@/components/site-header"
-import Image from 'next/image'
-
-const carImages = [
-  "/1.JPG",
-  "/2.JPG",
-  "/3.JPG",
-  "/4.JPG"
-]
 
 export default function Home() {
   return (
@@ -20,7 +12,7 @@ export default function Home() {
         <Breadcrumb />
         <div className="mt-6 grid gap-6 lg:grid-cols-[2fr,1fr]">
           <CarCarousel 
-            images={["/1.jpg", "/2.jpg", "/3.JPG", "/4.JPG"]} 
+            images={["/1.JPG", "/2.JPG", "/3.JPG", "/4.JPG"]} 
             soldOut={false} 
           />
           <div className="space-y-6">
