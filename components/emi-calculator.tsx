@@ -5,7 +5,7 @@ import { BarChart3, ChevronRight } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
+import * as Slider from '@radix-ui/react-slider'
 import {
   Sheet,
   SheetContent,
