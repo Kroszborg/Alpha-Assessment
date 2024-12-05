@@ -4,28 +4,26 @@ import { useState } from 'react';
 
 export const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
-    <Collapsible
-      open={isOpen}
+    <Collapsible 
+      open={isOpen} 
       onOpenChange={setIsOpen}
-      className="w-full space-y-1"
+      className="w-full"
     >
       <CollapsibleTrigger asChild>
-        <Button
-          variant="outline"
-          size="default"
-          className="w-full justify-between text-left font-normal"
+        <Button 
+          variant="outline" 
+          className="w-full justify-between"
+          onClick={() => setIsOpen(!isOpen)}
         >
           {question}
+          <span>{isOpen ? '▼' : '▶'}</span>
         </Button>
       </CollapsibleTrigger>
-      <CollapsibleContent className="space-y-3 rounded-md border p-3">
-        <div className="space-y-1">
-          <p>{answer}</p>
-        </div>
+      <CollapsibleContent className="p-4 border-t">
+        {answer}
       </CollapsibleContent>
     </Collapsible>
   );
 };
-
