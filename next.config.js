@@ -7,6 +7,9 @@ const nextConfig = {
   eslint: {
     // Ignore ESLint build errors
     ignoreDuringBuilds: true
+  },
+  images: {
+    unoptimized: true  // If using static images
   }
 };
 

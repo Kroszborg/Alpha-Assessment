@@ -3,12 +3,13 @@ import { CarCarousel } from "@/components/car-carousel"
 import { CarDetails } from "@/components/car-details"
 import { EMICalculator } from "@/components/emi-calculator"
 import { SiteHeader } from "@/components/site-header"
+import Image from 'next/image'
 
 const carImages = [
   "/1.jpg",
   "/2.jpg",
   "/3.jpg",
-  "/4.jpg",
+  "/4.jpg"
 ]
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
       <main className="container px-4 py-6">
         <Breadcrumb />
         <div className="mt-6 grid gap-6 lg:grid-cols-[2fr,1fr]">
-          <CarCarousel images={carImages} />
+          <CarCarousel 
+            images={carImages} 
+          />
           <div className="space-y-6">
             <EMICalculator />
             <CarDetails
