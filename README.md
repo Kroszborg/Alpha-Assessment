@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alpha Assessment
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This is a Next.js-based car marketplace application designed to provide an interactive and user-friendly experience for browsing and exploring car details. The project focuses on creating a responsive and feature-rich interface inspired by the Spinny website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Project Structure
+- Next.js application with a comprehensive car details page
+- Modular component-based architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Car Carousel
+- Responsive image carousel
+- Navigation between multiple car images
+- 360° view functionality with image rotation simulation
+- Interactive dialog for enhanced image viewing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. EMI Calculator
+- Interactive loan payment estimation tool
+- Adjustable sliders for:
+  - Loan amount
+  - Down payment
+  - Loan duration
+- Prominent EMI calculation display
+- "Check eligibility" action button
 
-## Learn More
+### 4. Car Details Section
+- Comprehensive car information display
+- Key details including:
+  - Car title
+  - Specifications
+  - Location
+  - Pricing
+- "VIEW SIMILAR CARS" button for enhanced navigation
 
-To learn more about Next.js, take a look at the following resources:
+## Technical Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Responsive Design
+- Adaptive layout for various screen sizes
+- Responsive components that adjust based on device width
+- Mobile-friendly vertical stacking for smaller screens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Technology Stack
+- Framework: Next.js
+- Styling: Tailwind CSS
+- State Management: React Hooks
 
-## Deploy on Vercel
+### Styling
+- Custom color scheme (purple and white)
+- Hover effects on interactive elements
+- Consistent design language
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Performance Optimizations
+- Next.js Image component for optimized image loading
+- Lazy loading for 360° view dialog
+- Efficient client-side rendering
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Accessibility
+- ARIA labels and roles
+- Full keyboard navigation support
+- Screen reader compatibility
+
+## Development Setup
+
+### Prerequisites
+- Node.js
+- npm or yarn
+
+### Installation Steps
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Future Enhancements
+- Integrate real car data
+- Implement backend API connections
+- Add more interactive features
+- Expand car comparison functionality
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## Contact
+[Email](abhimanpanwar6@gmail.com)
